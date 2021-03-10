@@ -24,9 +24,9 @@ func (s *Stack) Pop() (bool, string) {
 	if s.UnderFlow() {
 		return true, ""
 	} else {
-		index := len(s.pool) - 1 // Get the index of the top most element.
-		removed := s.pool[index] // Index into the slice and obtain the element.
-		s.pool = s.pool[:index] // Remove it from the stack by slicing it off.
+		index := len(s.pool) - 1 
+		removed := s.pool[index] 
+		s.pool = s.pool[:index] 
 		return true, removed
 	}
 }
