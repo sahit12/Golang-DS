@@ -19,4 +19,4 @@ jobs:
         go-version: 1.15
 
     - name: Run Scripts
-      run: go run ../../DS/normalQueue.go
+      run: cd ../../DS/normalQueue.go && go run -v
