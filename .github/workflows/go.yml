@@ -19,4 +19,4 @@ jobs:
         go-version: 1.15
 
     - name: Run Scripts
-      run: cd DS && for i in $(ls -al | cut -d' ' -f10 | cut -d'/' -f2); do go run $i; done
+      run: cd DS && go run singlyLinkedList.go
